@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itbank</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="barra-nav">
+            
+            <button id="llamamenu" class="boton-nav" title="">
+                <i class="material-icons">menu</i>
+                <p>MENÚ</p>
+            </button>
+            <!-- futuro menu desplegable
+              <ul "nav-left-section">
+                  <li> <a href=""> Inicio </a></li>
+                  <li> <a href=""> Cuentas </a></li>
+                  <li> <a href=""> Tarjetas </a></li>
+                  <li> <a href=""> Transacciones </a></li>
+                  <li> <a href=""> Pagos </a></li>
+                </ul>  -->
+            <img src="img/itbank-logo.jpg" class="logo-itbank" alt="logo itbank">
+
+
+            <nav>
+                <ul class="nav-right-section">
+                    <li>
+                        <p>Nombre Apellido</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/005/788/small/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
+                                alt="user logo">
+                        </a>
+                    </li>
+                    <button type="button" class="boton-nav">SALIR</button>
+                    <li>
+
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <nav class="buscador-header">
+            <div>
+                <form role="search">
+                    <input type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="boton-nav" type="submit"><i class="material-icons">search</i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+          <div class="hola-nombre">
+                <h2>
+                    Hola Nombre!
+                    <p> Ver tus últimos movimientos </p>
+                </h2>
+            </div>
+
+         <section class="cuenta">
+            <article>
+                <h3> 009-8889997 N° de cuenta</h3>
+                <p>Cuenta única</p>
+                <p class="saldo"> $10.000,00</p>
+                <p class="saldo"> U$S 0,00</p>
+
+                <button type="button" class="btn btn-outline-secondary" disabled> Alias/CBU </button>
+
+            </article>
+
+            <article>
+                <h3>
+                    Tarjeta **** 0000 0000 0000
+                </h3>
+                <p class="ultimos-consumos"> últimos consumos</p>
+
+            </article>
+        </section>
+
+        <section class="accesos-directos">
+            <div>
+                <h2>
+                    Accesos directos
+                </h2>
+                <p>Personalizalos de acuerdo a tus necesidades</p>
+            </div>
+
+            <button type="button" class="btn btn-outline-primary">Transferencias</button>
+            <button type="button" class="btn btn-outline-secondary">Pagos</button>
+            <button type="button" class="btn btn-outline-success">Tarjetas</button>
+            <button type="button" class="btn btn-outline-danger">Prestamos</button>
+            <button type="button" class="btn btn-outline-warning">Inversiones</button>
+            <button type="button" class="btn btn-outline-info">Promociones</button>
+
+
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <p> 2022 ITBANK S.A derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
