@@ -1,0 +1,59 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formularioacceso {
+    width: 20%;
+    background-color:#302e39 ;
+    color: white;
+    padding:20px;
+    padding-top: 250px;
+    height: 2000px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infodebienvenida {
+     width: 80%;
+    text-align: center;
+    padding: 10%;
+    gap: 20px;
+     background: rgb(101,93,140);
+    background: linear-gradient(90deg, rgba(101,93,140,1) 0%, rgba(14,109,168,1) 24%, rgba(255,255,255,1) 99%);
+}
+.formularioacceso h1 {
+    font-size: 65px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.infodebienvenida h2 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.infodebienvenida h3 {
+    font-size: 50px;
+    font-weight: bold;    
+    color: white;
+}
+
+.referencias {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.terminosycondiciones {
+    text-align: center;
+    margin-top: 180px;
+}
