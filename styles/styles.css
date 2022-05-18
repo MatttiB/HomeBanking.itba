@@ -127,6 +127,11 @@ header .buscador-header .boton-nav i{
     align-content: center;
     
 }
+
+main {
+    margin-bottom: 4rem;
+}
+
 /*fin header*/
 
 .cuenta{
@@ -135,3 +140,51 @@ header .buscador-header .boton-nav i{
   margin: 50px;
 
 }
+
+
+/* ACCESOS DIRECTOS */
+
+main .accesos-directos .títulos {
+    border: 2px solid black;
+    color: white;
+    background-color: #302e39;
+}
+
+main .accesos-directos .títulos h2 {
+    display: flex;
+    justify-content: start;
+    margin-left: 3rem;
+}
+
+main .accesos-directos .títulos p {
+    display: flex;
+    justify-content: left;
+    margin-left: 2.5rem;
+}
+
+main .accesos-directos .nav-bar {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: .5rem;
+    background-color: #0e6da8;
+    border-radius: 10px;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+main .accesos-directos .nav-bar button {
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+    background-color: #0e6da8;
+    border: #0e6da8;
+}
+
+main .accesos-directos .nav-bar button:hover {
+    background-color: #063d5f;
+    border: #063d5f;
+}
+
+/* FIN DE ACCESOS DIRECTOS */
