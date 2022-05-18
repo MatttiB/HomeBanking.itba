@@ -209,3 +209,52 @@ main .accesos-directos .nav-bar button:hover {
 }
 
 /* FIN DE ACCESOS DIRECTOS */
+
+
+/* panel consumos */
+
+.ultimosconsumos{
+    color: #302e39;
+    font-size: 30px;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+.dataconsumos{
+font-size: 20px;
+font-weight: 600;
+}
+
+.fechaconsumos{
+font-size: 20px;
+font-weight: 600;
+} 
+
+.valorconsumos{
+font-size: 20px;
+font-weight: 600;
+}
+
+.cajaconsumos{
+display: flex;
+justify-content: space-between;
+}
+
+.pruebaconsumo{
+display: flex;
+flex-direction: column;
+}
+
+
+.cajaconsumos {
+display: flex;
+width: calc(100% / 5 - 15px);
+justify-content: space-between;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,247,247,1) 0%, rgba(14,109,168,1) 100%);
+width: 100%;
+margin-bottom: 10px;
+}
+
+/* fin panel consumos */
+
