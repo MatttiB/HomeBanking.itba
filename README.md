@@ -13,11 +13,11 @@ Nuestro objetivo es crear una plataforma de homebanking capaz de adaptarse a las
 
 ## Problemas a solucionar en relación a la pérdida de clientes
 
--Gran parte de los clientes jóvenes (18-30 años) se aburren en la plataforma.
--Aborrecen los procesos burocráticos y reclaman **canal de comunicación**.
--Sitio no funciona en pantallas táctiles o dispositivos móviles.
--La plataforma tarda mucho en cargar y la app gasta muchos datos
--El servicio no es inclusivo para personas no videntes o extranjeros que no hablan español.
+- Gran parte de los clientes jóvenes (18-30 años) se aburren en la plataforma.
+- Aborrecen los procesos burocráticos y reclaman **canal de comunicación**.
+- Sitio no funciona en pantallas táctiles o dispositivos móviles.
+- La plataforma tarda mucho en cargar y la app gasta muchos datos
+- El servicio no es inclusivo para personas no videntes o extranjeros que no hablan español.
 
 ## Maquetado del proyecto
 1° Sprint: Página de logeo y de inicio.
