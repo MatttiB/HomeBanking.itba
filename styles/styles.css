@@ -167,7 +167,6 @@ border: 0.5px solid #302e39;
 /* ACCESOS DIRECTOS */
 
 main .accesos-directos .títulos {
-    border: 2px solid black;
     color: white;
     background-color: #302e39;
 }
@@ -185,32 +184,38 @@ main .accesos-directos .títulos p {
 }
 
 main .accesos-directos .nav-bar {
-    border: 2px solid black;
     display: grid;
     grid-template-areas: 
     'a b c'
     'd e f';
-    gap: 2.4rem 1rem;
-    margin: 0 15%;
+    gap: 2.4rem 2.4rem;
+    margin: 0 10%;
     padding: 2.5rem;
 }
 
 main .accesos-directos .nav-bar button {
-    
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #0e6da8;
-    border-radius: 10px;
-    background-color: white;
     border: 3px #0e6da8 solid;
+    border-radius: 10px;
+}
+
+main .accesos-directos .nav-bar button img {
+    width: 8rem;
+    height: 8rem;
 }
 
 /* ANIMACIONES */
 
 main .accesos-directos .nav-bar button:hover {
-    color: white;
+    color:white;
     background-color: #063d5f;
     border: 3px #0e6da8 solid;
 }
+
+
 
 /* RESPONSIVE */
 
