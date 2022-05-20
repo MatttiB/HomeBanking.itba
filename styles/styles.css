@@ -12,6 +12,10 @@ main {
     margin: 0 auto;
 
 }
+
+body {
+    background-color: #302e3911;
+}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -135,6 +139,15 @@ main {
 
 /*fin header*/
 
+/*main*/
+
+main .titulo-nombre{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+/* tarjetas*/
+
 .cuenta{
 display: grid;
 grid-template-areas: 
@@ -169,47 +182,51 @@ border: 0.032em solid #302e39;
 /* ACCESOS DIRECTOS */
 
 main .accesos-directos .títulos {
-    border: 2px solid black;
     color: white;
     background-color: #302e39;
 }
 
-main .accesos-directos .títulos h2 {
+main .accesos-directos .títulos h3 {
     display: flex;
     justify-content: start;
     margin-left: 3rem;
+    
 }
 
 main .accesos-directos .títulos p {
     display: flex;
     justify-content: left;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
 }
 
 main .accesos-directos .nav-bar {
-    border: 2px solid black;
     display: grid;
     grid-template-areas: 
     'a b c'
     'd e f';
-    gap: 2.4rem 1rem;
-    margin: 0 15%;
+    gap: 2.4rem 2.4rem;
+    margin: 0 10%;
     padding: 2.5rem;
 }
 
 main .accesos-directos .nav-bar button {
-    
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #0e6da8;
-    border-radius: 10px;
-    background-color: white;
     border: 3px #0e6da8 solid;
+    border-radius: 10px;
+}
+
+main .accesos-directos .nav-bar button img {
+    width: 8rem;
+    height: 8rem;
 }
 
 /* ANIMACIONES */
 
 main .accesos-directos .nav-bar button:hover {
-    color: white;
+    color:white;
     background-color: #063d5f;
     border: 3px #0e6da8 solid;
 }
@@ -247,5 +264,63 @@ main .accesos-directos .nav-bar button:hover {
         justify-content: center;
     }
 
+}
+/* panel consumos */
+
+.ultimosconsumos{
+    background-color:#302e39;
+    color: white;
+    font-size: 30px;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+main .ultimosconsumos .tituloconsumo {
+    color: white;
+    background-color: #302e39;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 3rem;
+    height: 4rem;
+}
+
+.dataconsumos{
+font-size: 20px;
+font-weight: 600;
+margin-left: 2rem;
+}
+
+.fechaconsumos{
+font-size: 20px;
+font-weight: 600;
+} 
+
+.valorconsumos{
+font-size: 20px;
+font-weight: 600;
+}
+
+.pruebaconsumo{
+display: flex;
+flex-direction: column;
+}
+
+
+.cajaconsumos {
+display: flex;
+width: calc(100% / 5 - 15px);
+justify-content: space-between;
+width: 100%;
+padding-right: 1rem;
+
+}
+
+.nombredelconsumo{
+    margin-left: 1rem;
    
 }
+
+
+/* fin panel consumos */
+
