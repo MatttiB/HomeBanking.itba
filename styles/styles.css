@@ -320,3 +320,71 @@ padding-right: 1rem;
 
 /* fin panel consumos */
 
+/*footer agus*/
+  footer{
+    
+    width: 100%;
+    background:#302e39;
+  }
+  footer .contenido {
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer .contenido p,a{
+    color: #fff;}
+
+    footer .contenido .cajaright{
+      position: relative;
+      bottom: -35px;
+        width: 33%;
+        transition: all 0.4s ease;
+      }
+
+footer .navegacion {font-weight: bold;
+font-size:22px;
+}
+
+footer .cajaright a:hover{
+    color: #0e6da8;
+  }
+     
+  .buttons {
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    color: #302e39;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+  
+  img {  width: 200px;
+    height: 120px;}
+
+  .cajamiddle {
+    position:relative;
+    right: 550px;
+    bottom: 12px;
+  }
+/*fin de footer*/
