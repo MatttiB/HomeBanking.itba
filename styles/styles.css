@@ -187,10 +187,9 @@ main .accesos-directos .títulos {
 }
 
 main .accesos-directos .títulos h3 {
+    margin-left: 1.5rem;
     display: flex;
-    justify-content: start;
-    margin-left: 3rem;
-    
+    justify-content: start;    
 }
 
 main .accesos-directos .títulos p {
@@ -265,24 +264,22 @@ main .accesos-directos .nav-bar button:hover {
     }
 
 }
+
 /* panel consumos */
 
-.ultimosconsumos{
+main .ultimosconsumos{
+    display: flex;
+    flex-direction: row;
     background-color:#302e39;
-    color: white;
-    font-size: 30px;
-    font-weight:500;
     margin-bottom: 10px;
 }
 
-main .ultimosconsumos .tituloconsumo {
-    color: white;
-    background-color: #302e39;
+main .ultimosconsumos h3 {
     display: flex;
     justify-content: start;
-    align-items: center;
-    margin-left: 3rem;
-    height: 4rem;
+    padding-top: .5rem;
+    margin-left: 1.5rem;
+    color: white;
 }
 
 .dataconsumos{
@@ -320,7 +317,6 @@ padding-right: 1rem;
     margin-left: 1rem;
    
 }
-
 
 /* fin panel consumos */
 
