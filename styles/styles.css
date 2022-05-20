@@ -12,6 +12,10 @@ main {
     margin: 0 auto;
 
 }
+
+body {
+    background-color: #302e3911;
+}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -135,6 +139,15 @@ main {
 
 /*fin header*/
 
+/*main*/
+
+main .titulo-nombre{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+/* tarjetas*/
+
 .cuenta{
 display: flex;
 justify-content: space-evenly;
@@ -171,16 +184,17 @@ main .accesos-directos .títulos {
     background-color: #302e39;
 }
 
-main .accesos-directos .títulos h2 {
+main .accesos-directos .títulos h3 {
     display: flex;
     justify-content: start;
     margin-left: 3rem;
+    
 }
 
 main .accesos-directos .títulos p {
     display: flex;
     justify-content: left;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
 }
 
 main .accesos-directos .nav-bar {
@@ -215,8 +229,6 @@ main .accesos-directos .nav-bar button:hover {
     border: 3px #0e6da8 solid;
 }
 
-
-
 /* RESPONSIVE */
 
 @media screen and (max-width: 770px) {
@@ -246,15 +258,27 @@ main .accesos-directos .nav-bar button:hover {
 /* panel consumos */
 
 .ultimosconsumos{
-    color: #302e39;
+    background-color:#302e39;
+    color: white;
     font-size: 30px;
     font-weight:500;
     margin-bottom: 10px;
 }
 
+main .ultimosconsumos .tituloconsumo {
+    color: white;
+    background-color: #302e39;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 3rem;
+    height: 4rem;
+}
+
 .dataconsumos{
 font-size: 20px;
 font-weight: 600;
+margin-left: 2rem;
 }
 
 .fechaconsumos{
@@ -267,11 +291,6 @@ font-size: 20px;
 font-weight: 600;
 }
 
-.cajaconsumos{
-display: flex;
-justify-content: space-between;
-}
-
 .pruebaconsumo{
 display: flex;
 flex-direction: column;
@@ -282,11 +301,16 @@ flex-direction: column;
 display: flex;
 width: calc(100% / 5 - 15px);
 justify-content: space-between;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,247,247,1) 0%, rgba(14,109,168,1) 100%);
 width: 100%;
-margin-bottom: 10px;
+padding-right: 1rem;
+
 }
+
+.nombredelconsumo{
+    margin-left: 1rem;
+   
+}
+
 
 /* fin panel consumos */
 
