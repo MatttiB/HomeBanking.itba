@@ -1,82 +1,95 @@
 * {
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0%;
+    padding: 0;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50%;
+}
+
+
+main{
+    margin: 0;
 }
 
 body {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 form{
-    font-size: 1.4em;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
 }
 
 .formularioacceso {
-    width: 32em;
+    width: 100%;
     background-color:#252525 ;
+    height: 100%;
     color: white;
-    padding:20px;
-    padding-top: 250px;
-    height: 1233px;
+    padding:1.25rem;
+    padding-top: 15.625rem;
     justify-content: center;
     flex-direction: column;
 }
 
+.formularioacceso h1 {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 3.4375rem;
+}
+
 .infodebienvenida {
-    width: 135em; 
-    text-align: center left 5em;
-    gap: 20px;
+    width: 100%; 
     background: rgb(0, 73, 207);
     background: linear-gradient(90deg, #0e6da8 20%, rgb(51, 128, 179) 25%, rgb(255, 255, 255) 80%);
 }
-.formularioacceso h1 {
-    font-size: 6em;
+
+.infodebienvenida img{
+    margin-left: 2rem;
+    width: 40%;
+    margin-right: 0rem;
+    object-fit: fill;
     text-align: center;
-    font-weight: bolder;
-    margin-bottom: 55px;
+    
 }
 
 .infodebienvenida h2 {
-    font-size: 5em;
+    font-size: 5rem;
     text-align: right;
     font-weight: bolder;
     color: rgb(0, 0, 0);
+    margin-left: 2rem;
+    
 }
 
 .infodebienvenida h3 {
-    font-size: 6em;
+    font-size: 6rem;
     text-align: right;
-    font-weight: bold;    
+    font-weight: bold;   
     color: #0e6da8;
     font-family: 'Caveat Brush', cursive;
 }
 
+.infodebienvenida h4 {
+    font-size: 3rem;
+    text-align: right; 
+    font-weight: bold;    
+    color: rgb(0, 0, 0);
+}
+
 .referencias {
-    margin-top: 3em;
+    margin-top: 3rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .terminosycondiciones {
     text-align: center;
-    margin-top: 180px;
-}
-
-.infodebienvenida h4 {
-    font-size: 2em;
-    text-align: right;
-    font-weight: bold;    
-    color: rgb(20, 20, 20);
-}
-
-img{
-    padding-top: 100px;
-    width: 900px;
-    height: 1200px;
+    font-size: 1rem;
+    margin-top: 11.25rem;
 }
 
 .ingresar{
