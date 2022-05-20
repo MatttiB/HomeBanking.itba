@@ -136,28 +136,30 @@ main {
 /*fin header*/
 
 .cuenta{
-display: flex;
-justify-content: space-evenly;
-margin: 50px;
+display: grid;
+grid-template-areas: 
+ 'a b';
+margin: 3.125em;
 flex: auto;
-
-
 }
+
+
 
 .cuenta article{
 background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,247,247,1) 0%, rgba(14,109,168,1) 100%);
-height: 250px;
-width: 450px;
-padding: 6px;
--webkit-border-top-left-radius: 10px;
--webkit-border-bottom-right-radius: 10px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-bottomright: 10px;
-border-top-left-radius: 10px;
-border-bottom-right-radius: 10px;
-border: 0.5px solid #302e39;
+height: 16em;
+width: 28em;
+padding: 0.37em;
+-webkit-border-top-left-radius: 0.6em;
+-webkit-border-bottom-right-radius: 0.6em;
+-moz-border-radius-topleft: 0.6em;
+-moz-border-radius-bottomright: 0.6em;
+border-top-left-radius: 0.6em;
+border-bottom-right-radius: 0.6em;
+border: 0.032em solid #302e39;
 }
+
 
 .cuenta article:hover{
     transform: translateY(-15px);
@@ -235,53 +237,15 @@ main .accesos-directos .nav-bar button:hover {
     }
 }
 
-/* FIN DE ACCESOS DIRECTOS */
+@media screen and (max-width: 1060px) {
+    main .cuenta {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b';
+        gap: 5rem;
+        justify-content: center;
+    }
 
-
-/* panel consumos */
-
-.ultimosconsumos{
-    color: #302e39;
-    font-size: 30px;
-    font-weight:500;
-    margin-bottom: 10px;
+   
 }
-
-.dataconsumos{
-font-size: 20px;
-font-weight: 600;
-}
-
-.fechaconsumos{
-font-size: 20px;
-font-weight: 600;
-} 
-
-.valorconsumos{
-font-size: 20px;
-font-weight: 600;
-}
-
-.cajaconsumos{
-display: flex;
-justify-content: space-between;
-}
-
-.pruebaconsumo{
-display: flex;
-flex-direction: column;
-}
-
-
-.cajaconsumos {
-display: flex;
-width: calc(100% / 5 - 15px);
-justify-content: space-between;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,247,247,1) 0%, rgba(14,109,168,1) 100%);
-width: 100%;
-margin-bottom: 10px;
-}
-
-/* fin panel consumos */
-
