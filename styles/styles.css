@@ -70,6 +70,13 @@ header .barra-nav p{
     margin:0;
 }
 
+header .menu-desplegable div{
+    background-color:#0e6da8;
+    color: #fff;
+}
+header .menu-desplegable .btn-close{
+    color: #fff;
+}
 
 /* sector derecho*/
 header .nav-right-section {
@@ -230,40 +237,6 @@ main .accesos-directos .nav-bar button:hover {
     border: 3px #0e6da8 solid;
 }
 
-/* RESPONSIVE */
-
-@media screen and (max-width: 770px) {
-    main .accesos-directos .nav-bar {
-        grid-template-areas: 
-        'a b'
-        'c d'
-        'e f';
-    }
-}
-
-@media screen and (max-width: 560px) {
-    main .accesos-directos .nav-bar {
-        grid-template-areas: 
-        'a'
-        'b'
-        'c'
-        'd'
-        'e'
-        'f';
-    }
-}
-
-@media screen and (max-width: 1060px) {
-    main .cuenta {
-        display: grid;
-        grid-template-areas: 
-        'a'
-        'b';
-        gap: 5rem;
-        justify-content: center;
-    }
-
-}
 
 /* panel consumos */
 
@@ -353,13 +326,13 @@ footer .cajaright a:hover{
     color: #0e6da8;
   }
      
-  .buttons {
+footer .botones-footer {
     min-width: 200px;
     display: flex;
     justify-content: space-around;
   }
   
-  .buttons a {
+footer .botones-footer a {
     position: relative;
     bottom: 10px;
     text-decoration: none;
@@ -375,16 +348,83 @@ footer .cajaright a:hover{
     transition: all .4s ease-in-out;
   }
   
-  .buttons a:hover {
+ footer .botones-footer a:hover {
     transform: scale(1.2);
   }
   
-  img {  width: 200px;
+  footer img {  
+    width: 200px;
     height: 120px;}
 
-  .cajamiddle {
+  footer .cajamiddle {
     position:relative;
     right: 550px;
     bottom: 12px;
   }
 /*fin de footer*/
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 770px) {
+    header .barra-nav{
+        font-size: small; 
+    }
+
+    header .barra-nav .logo-itbank{
+        padding: 0;
+        height: 4em;
+    }
+    
+    header .barra-nav .boton-nav {
+        width: 4em;
+    }
+    header .barra-nav .boton-nav p   {
+        display: none ;
+        
+    }
+
+    header .barra-nav ul {
+        padding: 0;
+        
+    }
+    header .barra-nav ul p{
+        padding: 0;
+        width: 4em;
+    }
+   
+    header .buscador-header input{
+        width: 15em;
+    }
+   
+    main .accesos-directos .nav-bar {
+        grid-template-areas: 
+        'a b'
+        'c d'
+        'e f';
+    }
+}
+
+@media screen and (max-width: 560px) {
+    main .accesos-directos .nav-bar {
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f';
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    main .cuenta {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b';
+        gap: 5rem;
+        justify-content: center;
+    }
+
+}
