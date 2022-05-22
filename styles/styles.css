@@ -300,9 +300,9 @@ padding-right: 1rem;
     background:#302e39;
   }
   footer .contenido {
-    max-width: 1350px;
+    max-width: 84.3753em;
     margin: auto;
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -319,7 +319,7 @@ padding-right: 1rem;
       }
 
 footer .navegacion {font-weight: bold;
-font-size:22px;
+font: size 1.375em;;
 }
 
 footer .cajaright a:hover{
@@ -327,7 +327,7 @@ footer .cajaright a:hover{
   }
      
 footer .botones-footer {
-    min-width: 200px;
+    min-width: 12.5em;
     display: flex;
     justify-content: space-around;
   }
@@ -336,10 +336,10 @@ footer .botones-footer a {
     position: relative;
     bottom: 10px;
     text-decoration: none;
-    font-size: 18px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    font-size: 1.125em;
+    width: 1.875em;
+    height: 1.875em;
+    line-height: 1.875em;
     text-align: center;
     background: #fff;
     color: #302e39;
@@ -353,12 +353,12 @@ footer .botones-footer a {
   }
   
   footer img {  
-    width: 200px;
-    height: 120px;}
+    width: 12.5em;
+    height: 7.5em;}
 
   footer .cajamiddle {
     position:relative;
-    right: 550px;
+    margin-right: auto;
     bottom: 12px;
   }
 /*fin de footer*/
@@ -415,7 +415,20 @@ footer .botones-footer a {
         'e'
         'f';
     }
-}
+
+       main .cuenta article {
+           width: 95%;
+           height: 90%;
+           font-size: 65%;
+           text-align: left;
+           padding: 0.3em;
+           
+       }
+
+       }
+        
+    
+
 
 @media screen and (max-width: 1060px) {
     main .cuenta {
@@ -428,3 +441,27 @@ footer .botones-footer a {
     }
 
 }
+
+@media screen and (max-width: 380px){
+    footer .cajaright{
+        font-size: 65%;
+        margin-top: -10%;
+    }
+ 
+    footer .cajamiddle {
+     margin-left: 45%;
+     margin-top: -13%;
+     padding: -10%;
+    }
+ 
+    footer .cajamiddle .logo img {
+        width: 70%;
+        height: 70%;
+    }
+ 
+    footer .cajamiddle .botones-footer{
+     font-size: 60%;
+     width: 60%;
+     height: 60%;
+     top: 10px;
+    }}
