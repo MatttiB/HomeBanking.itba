@@ -1,0 +1,16 @@
+$primary:       #0e6da8;
+$secondary:     #302e39;
+
+$border-color:                #8a8a8a;
+
+scroll-container {
+    display: block;
+    width: 98%;
+    height: 15rem;
+    margin-left: 4px;
+    margin-right: 4px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
