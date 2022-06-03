@@ -1,6 +1,7 @@
 var montoTotal = 0;
 var participantes = 0;
 
+
 function crearElemento(nombre, monto){
 
     var contribuyentes = document.getElementById("contribuyentes");
@@ -26,7 +27,16 @@ function agregar(){
 
     const nombre = document.getElementById("nombre");
     const monto = document.getElementById("monto");
+    var nombreAgregado = nombre.value;
+    var montoAgregado= monto.value;
 
+    if(nombreAgregado===''||montoAgregado===''){
+        nombre.setAttribute('placeholder', 'agregar un nombre válido');
+        monto.setAttribute('placeholder', 'agregar un monto válido');
+        return false;
+        
+    }
+    
     crearElemento(nombre.value, monto.value);
 
     montoTotal += parseFloat(monto.value);
@@ -34,6 +44,10 @@ function agregar(){
 
     actualizarResumen();
 
-    nombre.value = "";
+    nombre.value =  "";
     monto.value = "";
+    nombre.setAttribute('placeholder', 'Nombre');
+    monto.setAttribute('placeholder', 'Monto');
+    
 }
+
