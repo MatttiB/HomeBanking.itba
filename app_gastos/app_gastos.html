@@ -16,14 +16,22 @@
         </section>
         <form class="row-1 d-flex flex-column align-items-center p-3"> 
 
-            <input class="form-control w-100 mb-2" 
-            type="text" placeholder="Nombre" id="nombre">
-
-            <input class="form-control w-100 mb-2" 
-            type="text" placeholder="Monto" id="monto">
-                
-            <input class="btn btn-secondary w-100" type="button" value="Enviar" 
-            onclick="agregar()">
+            <div class="form-control">
+                <input class="form-control w-50 mb-2" 
+                type="text" placeholder="Nombre" id="nombre">
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+    
+            <div class="form-control">
+                <input class="form-control w-50 mb-2" 
+                type="number" placeholder="Monto" id="monto">
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+    
+                <input class="btn btn-danger w-100" type="button" value="Enviar" 
+                onclick="agregar()">
 
         </form>
         <scroll-container class="row-1 border border-1 rounded-1" id="contribuyentes">

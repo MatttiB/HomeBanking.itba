@@ -23,6 +23,19 @@ function actualizarResumen(){
     montoDividido.textContent = "A cada uno le toca aportar: $" + (montoTotal / participantes);
 }
 
+function setErrorFor(input, message) {
+const formControl = input.parentElement;
+const small = formControl.querySelector('small');
+formControl.className = 'form-control error';
+small.innerText = message;
+
+}
+
+function setSuccessFor(input) {
+const formControl = input.parentElement;
+formControl.className = 'form-control success';
+}
+
 function agregar(){
 
     const nombre = document.getElementById("nombre");
@@ -30,10 +43,27 @@ function agregar(){
     var nombreAgregado = nombre.value;
     var montoAgregado= monto.value;
 
-    if(nombreAgregado===''||montoAgregado===''){
-        nombre.setAttribute('placeholder', 'agregar un nombre válido');
-        monto.setAttribute('placeholder', 'agregar un monto válido');
+
+    if(nombreAgregado===''&&montoAgregado===''){
+        nombre.setAttribute('placeholder', 'Agregar un nombre válido');
+        monto.setAttribute('placeholder', 'Agregar un monto válido');
+        setErrorFor(nombre, 'Debe completar este campo');
+        setErrorFor(monto, 'Debe completar este campo')
+        return false;}
+        
+
+    if(nombreAgregado===''){
+        nombre.setAttribute('placeholder', 'Agregar un nombre válido');
+        setErrorFor(nombre, 'Debe completar este campo');
         return false;
+        }
+
+    if(montoAgregado===''){
+        monto.setAttribute('placeholder', 'Agregar un monto válido');
+        setErrorFor(monto, 'Debe completar este campo')
+        return false;
+        
+        
     }
     
     crearElemento(nombre.value, monto.value);
@@ -47,6 +77,9 @@ function agregar(){
     monto.value = "";
     nombre.setAttribute('placeholder', 'Nombre');
     monto.setAttribute('placeholder', 'Monto');
-    
+    setSuccessFor(monto);
+    setSuccessFor(nombre);
 }
+    
+
 
