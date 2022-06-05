@@ -34,7 +34,6 @@ function agregar(){
         nombre.setAttribute('placeholder', 'agregar un nombre válido');
         monto.setAttribute('placeholder', 'agregar un monto válido');
         return false;
-        
     }
     
     crearElemento(nombre.value, monto.value);

@@ -1,7 +1,15 @@
-$primary:       #0e6da8;
-$secondary:     #302e39;
+$primary:       black;
+$secondary:     blue;
 
-$border-color:                #8a8a8a;
+$border-color:#8a8a8a;
+
+
+@media (min-width: 6000px) {
+    .alto-100{
+        height: 100vh;
+    }
+}
+
 
 scroll-container {
     display: block;
