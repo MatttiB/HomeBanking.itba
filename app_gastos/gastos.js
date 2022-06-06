@@ -7,6 +7,8 @@ function crearElemento(nombre, monto){
     var contribuyentes = document.getElementById("contribuyentes");
     var pEjemplo = document.getElementById("p-ejemplo");
     var p = pEjemplo.cloneNode(true);
+    
+    p.onclick=quitar;
 
     p.innerHTML = nombre + ": " + "$" + monto;
 
@@ -21,6 +23,9 @@ function actualizarResumen(){
 
     montoFinal.textContent = "TOTAL: $" + montoTotal;
     montoDividido.textContent = "A cada uno le toca aportar: $" + (montoTotal / participantes);
+
+    quitar();
+
 }
 
 function setErrorFor(input, message) {
@@ -81,5 +86,17 @@ function agregar(){
     setSuccessFor(nombre);
 }
     
+function quitar () {
+    document.getElementById('contribuyentes').removeChild(this);
 
+    montoTotal -= parseFloat (monto.value);
+   
+    if (montoTotal<=0) {
+        contribuyentes.setAttribute('placeholder', 'A cada uno le toca aportar');
+    }
+    
+    actualizarResumen();
+    agregar();
+
+}
 

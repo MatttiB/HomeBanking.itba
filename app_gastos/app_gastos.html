@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/custom.css">
-
-    <title>Gastos</title>
+    <title>¡Calculá tus gastos!</title>
 </head>
+
 <body class="bg-secondary">
     <div class="container vw-100 border border-4 bg-white alto-100 shadow-lg" >
         <section class="d-flex flex-column align-items-center p-4 bg-primary text-white">
-            <h1>App de gastos</h1>
-            <h3>Ingresa cuanto gastó cada persona</h3>
+            <h1>Calculadora de gastos</h1>
+            <h3>Ingresá cuánto gastó cada persona</h3>
         </section>
         <form class="row-1 d-flex flex-column align-items-center p-3"> 
 
@@ -21,24 +21,23 @@
                 type="text" placeholder="Nombre" id="nombre">
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
-            </div>
+            </div>  
     
             <div class="form-control">
                 <input class="form-control w-50 mb-2" 
                 type="number" placeholder="Monto" id="monto">
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
-            </div>
-    
-                <input class="btn btn-danger w-100" type="button" value="Enviar" 
+            </div>   
+                <input class="btn btn-info w-100 fw-bold" type="button" value="Enviar" 
                 onclick="agregar()">
 
         </form>
-        <scroll-container class="row-1 border border-1 rounded-1" id="contribuyentes">
+        <scroll-container class="row-1 border border-1 rounded-1 fs-5 fw-semibold" id="contribuyentes">
             <p class="border-bottom border-1 mx-1" id="p-ejemplo" >Participantes:</p>
         </scroll-container>
 
-        <div class="container row-1 p-3">
+        <div class="container row-1 p-3 fw-semibold fs-5">
             <p id="monto-total">TOTAL: -</p>
             <p id="monto-dividido">A cada uno le toca aportar: -</p>
         </div>
