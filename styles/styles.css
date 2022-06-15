@@ -148,6 +148,16 @@ main .titulo-nombre {
   grid-template-areas: "a b";
   margin: 3.125em;
   flex: auto;
+  width: 70%;
+  float: left;
+}
+
+.precio-dolar {
+  width: 20%;
+  background-color: #302e39;
+  float: left;
+  color: white;
+ 
 }
 
 .cuenta article {
@@ -172,6 +182,9 @@ main .titulo-nombre {
 }
 
 /* ACCESOS DIRECTOS */
+main .accesos-directos {
+  width: 100%;
+}
 
 main .accesos-directos .títulos {
   color: white;
@@ -229,6 +242,7 @@ main .accesos-directos .nav-bar button:hover {
 /* panel consumos */
 
 main .ultimosconsumos {
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #302e39;
