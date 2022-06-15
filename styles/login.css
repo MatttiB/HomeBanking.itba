@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to right, #302e39, #0e6da8);
   }
  
-  .bg {
-    background-image: url(/img/Foto-personal.png);
+.bg{
+    /*background-image: url(/img/Foto-personal.png);*/
     background-position: center center;
   }
