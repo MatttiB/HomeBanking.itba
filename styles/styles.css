@@ -209,8 +209,9 @@ main .accesos-directos .nav-bar {
     "a b c"
     "d e f";
   gap: 2.4rem 2.4rem;
-  margin: 0 10%;
+  margin: 0 20%;
   padding: 2.5rem;
+
 }
 
 main .accesos-directos .nav-bar button {
