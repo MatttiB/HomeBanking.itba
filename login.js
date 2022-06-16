@@ -18,6 +18,14 @@ ocultar.forEach(eyeIcon =>{
 
 })
 
+
+const btn = document.querySelector("#botoningresar");
+
+btn.addEventListener("click",() => {
+    window.location.href="index.html";
+});
+
+
 // // FUNCION ANTERIOR QUE CAPTURA LOS DATOS DEL FORM
 
 // function capturar(){

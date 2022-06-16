@@ -9,32 +9,33 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/registro.css">
-    <title>Formulario Registro</title>
+    <title>Registro</title>
 </head>
 <body>
     <h1 class="text-white text-center">Registrate</h1>
     <!-- Formulario  -->
     <div class="mb-4 text-white">
         <label for="text" class="form-label">Usuario</label> <i class="uil uil-user"></i>
-        <input  type="text" class="form-control" name="Usuario"  placeholder="Ingresá tu usuario" required> 
+        <input  type="text" class="form-control" name="Usuario"  placeholder="Nombre de usuario" required> 
     </div>
     <div class="input-group text-white">
         <span class="input-group-text">Nombre y apellido</span>
         <input type="text"  class="form-control" placeholder= "Nombre">
         <input type="text"  class="form-control" placeholder= "Apellido">
       </div>
-    <div class="mb-4 text-white">
+    <div class="mb-4 text-white" id="formulario">
         <label for="password" class="form-label">Contraseña</label> <i class="uil uil-lock"></i>
-        <input type="password" class="form-control" name="password" placeholder= "Escribe tu contreña" required>
-        <i class="uil uil-eye"></i>
+        <input type="password" class="form-control password" name="password" placeholder= "Escribe tu contreña" required>
+        <i class="uil uil-eye showHidePw"></i>
     <div class="mb-4 text-white">
         <label for="text" class="form-label">Correo</label> <i class="uil uil-envelope-check"></i>
         <input  type="text" class="form-control" name="Usuario"  placeholder="Ingresá tu correo" required> 
         </div>
      <!-- Boton  -->
     <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <button type="submit" class="btn btn-primary" onclick="window.location.href = 'bienvenida.html'">Registrarse</button>
     </div>
+    <script src="registro.js"></script>
         
 </body>
 </html>
