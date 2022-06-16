@@ -23,3 +23,13 @@ Nuestro objetivo es crear una plataforma de homebanking capaz de adaptarse a las
 1° Sprint: Página de logeo y de inicio.
 
 ![Página de inicio homebanking](https://user-images.githubusercontent.com/105286940/169166996-bb2f2828-5b9d-44d9-b3c9-0c4c5ed62a0a.jpg)
+
+3° Sprint: Modificaciones y tareas a realizar (14/06/2022).
+Para la parte de Login: Modificar Usuario, Hacer linkeo de botones, Generar puntos para tapar contraseña, Mejorar tema responsive.                                        Para la parte de Inicio: Centrar botones de la parte inferior, Hacer maqueta dólares para pantalla de inicio (como iría proyectado en la pantalla) y completar la consigna, detalles estéticos de la página, mejorar estetica menú y footer, linkear boton salir, modificar formulario prestamos.
+
+Ya se han realizado algunas tareas pero aún quedan por realizar algunas y se han agregado otras.
+
+Quedan por realizar (16/06/2022): Completar la parte de  dólares, detalles estéticos de la página (index), mejorar estetica menú y footer (index), modificar formulario prestamos.
+
+Las tareas agregadas son (16/06/2022): Hacer que usuario y contraseña generen mensaje de que falta completar el campo (login), Mejorar estetica del registro, Realizar un array que guarde los datos del registro de usuario nuevo (registro). 
+
