@@ -152,13 +152,7 @@ main .titulo-nombre {
   float: left;
 }
 
-.precio-dolar {
-  width: 20%;
-  background-color: #302e39;
-  float: left;
-  color: white;
- 
-}
+
 
 .cuenta article {
   background: rgb(2, 0, 36);
@@ -172,6 +166,7 @@ main .titulo-nombre {
   -moz-border-radius-bottomright: 0.6em;
   border-top-left-radius: 0.6em;
   border-bottom-right-radius: 0.6em;
+  
 }
 
 .cuenta article:hover {
@@ -180,6 +175,77 @@ main .titulo-nombre {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
+
+/*Precio dólar*/
+
+.precio-dolar {
+  width: 20%;
+  float: left;
+  color: #302e39;
+ 
+}
+#dolar-oficial {
+  
+  color: white;
+  text-align: center;
+  width: 100%;
+  float: left;
+  padding: 0.5em;
+}
+
+#dolar-blue{
+  color: white;
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding: 0.5em;
+}
+
+#dolar-liqui{
+  color: white;
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.precio-dolar .titulo-dolar {
+  background-color: #0e6da8;
+  border-radius: 5px;
+  height: 1.6em;
+
+}
+.precio-dolar .compra {
+  background-color: aliceblue;
+  text-align: center;
+  color: #0e6da8;
+  float: left;
+  padding right: 1em;
+  width: 50%;
+  height: 5em;
+  border-radius: 5px;
+
+}
+
+.precio-dolar .venta {
+  background-color: aliceblue;
+  text-align: center;
+  color: #0e6da8;
+ float: left;
+ padding right: 1em;
+ width: 50%; 
+ height: 5em;
+ border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 /* ACCESOS DIRECTOS */
 main .accesos-directos {
@@ -404,7 +470,7 @@ footer .cajamiddle {
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1200px) {
   main .cuenta {
     display: grid;
     grid-template-areas:
@@ -412,6 +478,19 @@ footer .cajamiddle {
       "b";
     gap: 5rem;
     justify-content: center;
+    width: 55%;
+  }
+
+  main .precio-dolar{
+    width: 30%;
+  }
+
+  main .precio-dolar .compra {
+    width: 100%;
+
+  }
+  main .precio-dolar .venta {
+    width: 100%;
   }
 }
 
