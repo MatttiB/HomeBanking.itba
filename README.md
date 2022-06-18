@@ -33,3 +33,5 @@ Quedan por realizar (16/06/2022): Completar la parte de  dólares, detalles est�
 
 Las tareas agregadas son (16/06/2022): Hacer que usuario y contraseña generen mensaje de que falta completar el campo (login), Mejorar estetica del registro, Realizar un array que guarde los datos del registro de usuario nuevo (registro), Modificar la bienvenida y ponerle un boton que te mande al inicio, MarginB del inicio.
 
+Falta hacer de las tareas mencionadas anteriormente (18/06/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), Completar la parte de  dólares (importante), mejorar estetica menú y footer (index) (opcional).
+
