@@ -220,7 +220,7 @@ main .titulo-nombre {
   text-align: center;
   color: #0e6da8;
   float: left;
-  padding right: 1em;
+  padding-right: 1em;
   width: 50%;
   height: 5em;
   border-radius: 5px;
@@ -232,7 +232,7 @@ main .titulo-nombre {
   text-align: center;
   color: #0e6da8;
  float: left;
- padding right: 1em;
+ padding-right: 1em;
  width: 50%; 
  height: 5em;
  border-radius: 5px;

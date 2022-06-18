@@ -1,30 +1,36 @@
-const container = document.getElementById('formulario')
-    ocultar = document.querySelectorAll('.showHidePw'),
-    campos = document.querySelectorAll('.password');
+const container = document.getElementById("formulario");
+(ocultar = document.querySelectorAll(".showHidePw")),
+  (campos = document.querySelectorAll(".password"));
 
 // CODIGO PARA OCULTAR
 
-ocultar.forEach(eyeIcon =>{
-    eyeIcon.addEventListener('click', ()=> {
-        campos.forEach (campos =>{
-            if(campos.type=== 'password'){
-                campos.type = 'text' ;
-            }else{
-                campos.type = 'password';
-           
-            }
-        })
-    })
-
-})
-
-
-const btn = document.querySelector("#botoningresar");
-
-btn.addEventListener("click",() => {
-    window.location.href="index.html";
+ocultar.forEach((eyeIcon) => {
+  eyeIcon.addEventListener("click", () => {
+    campos.forEach((campos) => {
+      if (campos.type === "password") {
+        campos.type = "text";
+      } else {
+        campos.type = "password";
+      }
+    });
+  });
 });
 
+// no permite ir a index sin completar campos
+let passwordUser = document.getElementById("passwordUser");
+let user = document.getElementById("user");
+
+function iniciarSesion() {
+  let passwordLogin = passwordUser.value;
+  let userLogin = user.value;
+  const btn = document.getElementById("botonIngresar");
+  if (passwordLogin === "" || userLogin === "") {
+    return false;
+    
+  } else {
+    window.open("/index.html");
+  }
+}
 
 // // FUNCION ANTERIOR QUE CAPTURA LOS DATOS DEL FORM
 
@@ -36,14 +42,14 @@ btn.addEventListener("click",() => {
 //     }
 //     var nombyape=document.getElementById ('usuario').value;
 //     var pass=document.getElementById ('password').value;
-    
+
 //     nuevoUsuario= new user(nombyape,pass);
 //     console.log(nuevoUsuario)
 
 //     if (nombyape=='') {
 //         alert('El usuario es obligatorio')
 //     }
-    
+
 //     if (pass=='') {
 //         alert('La contraseña es obligatoria')
 //     }
@@ -53,7 +59,6 @@ btn.addEventListener("click",() => {
 //     agregar();
 // }
 
-
 // //array para guardar los nuevos usuarios
 
 // var baseDatos = [];
@@ -61,4 +66,3 @@ btn.addEventListener("click",() => {
 //     baseDatos.push(nuevoUsuario);
 //     console.log (baseDatos)
 // }
-
