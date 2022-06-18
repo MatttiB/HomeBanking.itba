@@ -272,8 +272,7 @@ main .accesos-directos .títulos p {
 main .accesos-directos .nav-bar {
   display: grid;
   grid-template-areas:
-    "a b c"
-    "d e f";
+    "a b c d e f";
   gap: 2.4rem 2.4rem;
   margin: 0 20%;
   padding: 2.5rem;
@@ -468,9 +467,10 @@ footer .cajamiddle {
       "c d"
       "e f";
   }
+
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   main .cuenta {
     display: grid;
     grid-template-areas:
@@ -491,6 +491,17 @@ footer .cajamiddle {
   }
   main .precio-dolar .venta {
     width: 100%;
+  }
+
+  main .accesos-directos .nav-bar {
+    display: grid;
+    grid-template-areas:
+      "a b c" 
+      "d e f";
+    gap: 2.4rem 2.4rem;
+    margin: 0 20%;
+    padding: 2.5rem;
+  
   }
 }
 
