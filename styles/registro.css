@@ -1,5 +1,7 @@
 body {
-    background-color: #302e39;
+    background-image: url("../img/fondo-de-garantia-de-depositos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 10em 25em 0 25em;
 }
 
