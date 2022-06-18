@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "build": "purgecss --css sass/custom.css --content login.html -o sass/reducido.css"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
-  }
-}
