@@ -28,7 +28,7 @@ function iniciarSesion() {
     return false;
     
   } else {
-    window.open("../homebanking.itba/index.html");
+    window.open("index.html");
   }
 }
 
