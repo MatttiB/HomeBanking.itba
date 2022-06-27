@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/gastos.css">
+
+    <title>Gastos</title>
+</head>
+<body class="d-flex justify-content-center bg-secondary">
+    <div class="conteiner vh-100 border border-4 bg-white" >
+        <section class="d-flex flex-column align-items-center p-4 bg-primary text-white">
+            <h1>App de gastos</h1>
+            <h3>Ingresa cuanto gastó cada persona</h3>
+        </section>
+        <form class="row-1 d-flex flex-column align-items-center p-3"> 
+
+            <input class="form-control w-50 mb-2" 
+            type="text" placeholder="Nombre" id="nombre">
+
+            <input class="form-control w-50 mb-2" 
+            type="text" placeholder="Monto" id="monto">
+                
+            <input class="btn btn-danger w-100" type="button" value="Enviar" id="boton">
+
+        </form>
+        <scroll-container class="row-1 border border-1 rounded-1" id="contribuyentes">
+            <p class="border-bottom border-1 mx-1" id="p-ejemplo" >Participantes:</p>
+        </scroll-container>
+
+        <div class="row-1 p-3">
+            <p id="monto-total">TOTAL: -</p>
+            <p id="monto-dividido">A cada uno le toca aportar: -</p>
+        </div>
+    </div>
+    <script src="gastos.js" ></script>
+</body>
+</html>

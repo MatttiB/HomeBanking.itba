@@ -24,11 +24,11 @@ function iniciarSesion() {
   let passwordLogin = passwordUser.value;
   let userLogin = user.value;
   const btn = document.getElementById("botonIngresar");
-  if (passwordLogin === "" || userLogin === "") {
+  if (passwordLogin == "" || userLogin == "") {
     return false;
     
   } else {
-    window.open("index.html");
+    window.open("../inicio/index.html");
   }
 }
 
