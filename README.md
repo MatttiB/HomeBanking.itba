@@ -35,3 +35,8 @@ Las tareas agregadas son (16/06/2022): Hacer que usuario y contraseña generen m
 
 Falta hacer de las tareas mencionadas anteriormente (18/06/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), Completar la parte de  dólares (importante), mejorar estetica menú y footer (index) (opcional).
 
+
+4° Sprint: Modificaciones y tareas a realizar (27/06/2022).
+Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), mejorar estetica menú y footer (index) (opcional), Falta ajustar algunos detalles de visualización en la página del form donde el width inicial no sea ocupado en su totalidad por el formulario, y luego utilizar @media screen para que cuando se reduzca el tamaño del navegador el width aumente y Falta mejorar a futuro el flujo visual de la app (Importante) (Corrección sprint3), Sumarle estilo del ultimo mockup (index) (importante), Hacer que aparezca el nombre del usuario en la pagina principal, Corregir algunos linkeos que al hacer el acomodado del repo se rompieron (importante). 
+Además realizar lo pedido para el sprint 4 (lo más importante). 
+
