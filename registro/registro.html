@@ -9,33 +9,40 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/registro.css">
-    <title>Registro</title>
+    <title>¡Registrate a ITBANK!</title>
+    <link rel="icon" href="../img/itbank-logo.ico" />
+
 </head>
-<body class="container">
-    <h1 class="text-white text-center">Registrate</h1>
+<body class="container border-0 mt-6" style="width: 50%">
+    <!-- Fondo del form -->
+    <div id="contenedor-formulario">
+    <h1 class="text-white text-center pb-1 mb-3 ">Registrate</h1>
     <!-- Formulario  -->
-    <div class="mb-4 text-white">
-        <label for="text" class="form-label">Usuario</label> <i class="uil uil-user"></i>
+    <div class="mb-4 text-white" id="formulario">
+        <label for="text" class="form-label shadow-2 pb-1">Usuario</label> <i class="uil uil-user"></i>
         <input  type="text" class="form-control" name="Usuario"  placeholder="Nombre de usuario" required> 
     </div>
-    <div class="input-group text-white">
-        <span class="input-group-text">Nombre y apellido</span>
+    <div class="input-group">
+        <span class="input-group-text text-black pb-1">Nombre y apellido</span>
         <input type="text"  class="form-control" placeholder= "Nombre">
         <input type="text"  class="form-control" placeholder= "Apellido">
       </div>
-    <div class="mb-4 text-white" id="formulario">
-        <label for="password" class="form-label">Contraseña</label> <i class="uil uil-lock"></i>
-        <input type="password" class="form-control password" name="password" placeholder= "Escribe tu contreña" required>
+    <div class="mb-4 text-white pb-1" id="formulario">
+        <label for="password" class="form-label pt-2">Contraseña</label> <i class="uil uil-lock"></i>
+        <input type="password" class="form-control password" name="password" placeholder= "Escribe tu contraseña" required>
         <i class="uil uil-eye showHidePw"></i>
     <div class="mb-4 text-white">
-        <label for="text" class="form-label">Correo</label> <i class="uil uil-envelope-check"></i>
+        <label for="text" class="form-label pb-1">Correo</label> <i class="uil uil-envelope-check"></i>
         <input  type="text" class="form-control" name="Usuario"  placeholder="Ingresá tu correo" required> 
         </div>
      <!-- Boton  -->
-    <div class="d-grid">
-            <button type="submit" class="btn btn-primary" onclick="window.location.href = '../bienvenida.html'">Registrarse</button>
+    <div class="d-grid pb-0" >
+            <button type="submit" style="width: 100%" class="mt-2 btn bg-primary text-white" onclick="window.location.href = '../bienvenida.html'">Registrarse</button>
+            <button type="button" class="mt-3 btn btn-danger d-block mx-auto" style="width: 10%">Salir</button>
     </div>
+    
     <script src="registro.js"></script>
+    </div>
         
 </body>
 </html>
