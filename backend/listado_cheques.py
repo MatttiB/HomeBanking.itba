@@ -3,6 +3,8 @@ from datetime import datetime
 
 VACIO = "*****"
 
+# CONSTANTES 
+
 ETIQUETA_CABECERA_CSV_DNI = "DNI"
 ETIQUETA_CABECERA_CSV_NUM_CHEQUE = "NroCheque"
 ETIQUETA_CABECERA_CSV_FECHA = "Fecha"
@@ -13,6 +15,8 @@ ETIQUETA_CABECERA_CSV_ESTADO = "Estado"
 ETIQUETA_CABECERA_CSV_FECHA_ORIGEN = "FechaOrigen"
 ETIQUETA_CABECERA_CSV_FECHA_PAGO = "FechaPago"
 ETIQUETA_CABECERA_CSV_NUM_CUENTA = "NumeroCuentaOrigen"
+
+# EN LUGAR DE USAR EL ".SYS" UTILIZAMOS EL METODO ".PARSER' QUE ES MAS AMIGABLE Y PERMITE DELIMITAR EL TIPO DE ENTRADA
 
 parser = argparse.ArgumentParser(description= "Buscador de cheques")
 
@@ -32,7 +36,9 @@ if __name__ == "__main__":
         datos = list(lector)
         
     cabecera = datos[0]
-    
+
+    #CABECERA DEL CSV
+
     (posicion_dni,
      posicion_numero,
      posicion_tipo,
@@ -55,6 +61,7 @@ if __name__ == "__main__":
     numeros_cheques = []
     repetidos = []
     
+    #SE VERIFICA QUE SE CUENTEN Y QUE NO ESTEN REPETIDOS LOS CHEQUES 
     for cheques in datos_cliente:
         
         if numeros_cheques.count(cheques[posicion_numero]) == 1:
