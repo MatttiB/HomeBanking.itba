@@ -49,3 +49,8 @@ fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
             }
         }
     })
+
+//Desplegable de actividad reciente
+    $(".desplegable > ").click(function() {      
+        $(this).next(".contenido").toggle(500);
+      });
