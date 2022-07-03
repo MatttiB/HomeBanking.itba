@@ -307,6 +307,9 @@ main .accesos-directos .nav-bar button:hover {
 
 /* panel consumos */
 
+.contenido{
+  display: none;}
+
 main .ultimosconsumos {
   width: 100%;
   display: flex;
@@ -337,6 +340,8 @@ main .ultimosconsumos h3 {
 .valorconsumos {
   font-size: 20px;
   font-weight: 600;
+  margin-right: 80px;
+  align-content: center;
 }
 
 .pruebaconsumo {

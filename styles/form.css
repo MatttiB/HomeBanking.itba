@@ -34,7 +34,7 @@ body{
 }
 
 .formulario__input {
-    padding: 20px;
+    padding: 15px;
     /*background: transparent;*/
     background: rgba(47, 45, 57, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.3);
