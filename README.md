@@ -45,3 +45,5 @@ Además realizar lo pedido para el sprint 4 (lo más importante).
 Quedan por realizar (30/06/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), mejorar estetica menú y footer (index) (opcional), Falta mejorar a futuro el flujo visual de la app (Importante)(Corrección sprint3) = Sumarle estilo del ultimo mockup (index) (importante), Hacer que aparezca el nombre del usuario en la pagina principal, comentar y documentar el codigo de python (importante) (sprint 4).
 
 Aclaracion backend: la parte del backend para el sprint4 fue realizado la totalidad en grupo mediante discord.
+
+Quedan por realizar (03/07/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), mejorar estetica menú y footer (index) (opcional), Falta mejorar a futuro el flujo visual de la app (Importante)(Corrección sprint3) = Sumarle estilo del ultimo mockup (index) (importante), Hacer que aparezca el nombre del usuario en la pagina principal (index).
