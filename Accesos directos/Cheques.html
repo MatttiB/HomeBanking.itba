@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itbank</title>
+    <link rel="icon" href="../img/itbank-logo.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+        
+
+</head>
+
+<body>
+    <header>
+        <section class="barra-nav">
+            <div class="menu-desplegable">
+                <button class="boton-nav" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                        class="material-icons">menu</i>
+                    <p>MENÚ</p>
+                </button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class= "nav-left-section">
+                            <li> <a href=""> Inicio </a></li>
+                            <li> <a href=""> Cuentas </a></li>
+                            <li> <a href=""> Tarjetas </a></li>
+                            <li> <a href=""> Transacciones </a></li>
+                            <li> <a href=""> Pagos </a></li>
+                            <li> <a href="../app_gastos/app_gastos.html"> App de Gastos </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/itbank-logo.jpg" class="logo-itbank" alt="logo itbank">
+            <nav>
+                <ul class="nav-right-section">
+                    <li>
+                        <p>Nombre Apellido</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/005/788/small/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
+                                alt="user logo">
+                        </a>
+                    </li>
+
+                    <li>
+                        <button type="button" class="boton-nav" onclick="window.location.href = '../login/login.html'">SALIR</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <nav class="buscador-header">
+            <div>
+                <form role="search">
+                    <input type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="boton-nav" type="submit"><i class="material-icons">search</i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <h3>Chequera: Formulario de solicitud de cheques</h3>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+          <div class="col-8">
+      <form class="row g-3 ">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Numero de cheque</label>
+            <input type="number" class="form-control" id="inputNumCheque">
+          </div>
+          <div class="col-6">
+            <label for="inputDNI" class="form-label">DNI</label>
+            <input type="number" class="form-control" id="inputDNI">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCodigoBanco" class="form-label">Código de banco</label>
+            <input type="number" class="form-control" id="inputCodigoBanco">
+          </div>
+          <div class="col-6">
+            <label for="inputCodigoSucursal" class="form-label">Código Sucursal</label>
+            <input type="number" class="form-control" id="inputCodigoSucursal">
+          </div>
+          
+          <div class="col-md-6">
+            <label for="inputNumeroCuentaOrigen" class="form-label">Numero de cuenta origen</label>
+            <input type="number" class="form-control" id="inputNumeroCuentaOrigen">
+          </div>
+          <div class="col-md-6">
+            <label for="inputNumeroCuentaDestino" class="form-label">Numero de cuenta destino</label>
+            <input type="number" class="form-control" id="inputNumeroCuentaDestino">
+          </div>
+          <div class="col-md-6">
+            <label for="inputFechaOrigen" class="form-label">Fecha de emisión</label>
+            <input type="date" class="form-control" id="inputFechaOrigen">
+          </div>
+          <div class="col-md-6">
+            <label for="inputFechaPago" class="form-label">Fecha de pago</label>
+            <input type="date" class="form-control" id="inputFechaPago">
+          </div>
+          <div class="col-md-4">
+            <label for="inputEstado" class="form-label">Estado</label>
+            <select id="inputEstado" class="form-select">
+              <option selected>...</option>
+              <option>Pendiente</option>
+              <option>Aprobado</option>
+              <option>Rechazado</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputValor" class="form-label">Valor</label>
+            <input type="number" class="form-control" id="inputValor">
+          </div>
+          <div class="col-12">
+           
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Solicitar cheque</button>
+          </div>
+        </div>
+      </div>
+        </form>
+      </div>
+       
+
+
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenido">
+            <div class="cajaright">
+                <div class="navegacion"> <a href="#">Navegación</a> </div>
+                <div><a href="#">Preguntas Frecuentes</a></div>
+                <div><a href="#">Sobre Nosotros</a></div>
+                <div><a href="#">Seguridad</a></div>
+            </div>
+            <div class="cajamiddle">
+                <div class="logo">
+                    <img src="../img/itbank-logo.jpg" alt="Logo">
+                </div>
+                <div class="media-icons">
+                    <nav class="botones-footer">
+                        <a href="#" class="fa fa-facebook" onclick="window.location.href = 'https://www.facebook.com/itbauniversidad/'"></a>
+                        <a href="#" class="fa fa-twitter" onclick="window.location.href = 'https://twitter.com/ITBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'"></a>
+                        <a href="#" class="fa fa-instagram" onclick="window.location.href = 'https://www.instagram.com/itbauniversidad/?hl=es'"></a>
+                        <a href="#" class="fa fa-youtube" onclick="window.location.href = 'https://www.youtube.com/channel/UCk7TR5Oxi3h63uzCpG3rC6w'"></a>
+                        <a href="#" class="fa fa-linkedin" onclick="window.location.href = 'https://www.linkedin.com/school/instituto-tecnol%C3%B3gico-de-buenos-aires/?originalSubdomain=ar'"></a>
+                    </nav>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

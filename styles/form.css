@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif
+    
 }
 
 body{
@@ -8,6 +8,7 @@ body{
     font-family: sans-serif;
 
 }
+
 
 .formulario {
     width: 500px;
@@ -68,3 +69,117 @@ body{
 .fijar { 
     margin-top: -135px;
 }
+
+/*header*/
+
+header .barra-nav {
+    margin: 0 auto;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302e39;
+  }
+  /*imagen logo*/
+  header .barra-nav .logo-itbank {
+    height: 5em;
+    padding-left: 8em;
+  }
+  /* botones header*/
+  header .boton-nav {
+    font-size: medium;
+    font-weight: normal;
+    color: white;
+    background-color: #0e6da8;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* menu izq*/
+  
+  header .menu-desplegable button {
+    height: 3em;
+    width: 8em;
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .barra-nav .boton-nav i {
+    margin-right: 0.5em;
+  }
+  
+  header .barra-nav p {
+    margin: 0;
+  }
+  
+  header .menu-desplegable div {
+    background-color: #0e6da8;
+    color: #fff;
+  }
+  header .menu-desplegable .btn-close {
+    color: #fff;
+  }
+  
+  /* sector derecho*/
+  header .nav-right-section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em;
+  }
+  
+  header .nav-right-section li {
+    color: white;
+    height: 3em;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .nav-right-section img {
+    height: 2em;
+    border-radius: 50%;
+    margin: 0.5em;
+    margin-right: 1em;
+  }
+  
+  header .nav-right-section .boton-nav {
+    width: 6em;
+    height: 3em;
+  }
+  /*buscador */
+  header .buscador-header {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+  }
+  header .buscador-header form {
+    display: flex;
+    justify-content: center;
+  }
+  header .buscador-header input {
+    height: 2.5em;
+    width: 30rem;
+    border-radius: 0.5em;
+    border-width: thin;
+    outline-offset: 0;
+    outline-color: #0e6da8;
+    margin-right: 0.5em;
+  }
+  
+  header .buscador-header .boton-nav {
+    height: 2.5em;
+    width: 3em;
+  }
+  
+  header .buscador-header .boton-nav i {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  main {
+    margin-bottom: 4rem;
+  }
+  
