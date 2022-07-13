@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #302e3911;
+  background-color: #302e39;
 }
 a {
   text-decoration: none;
@@ -67,6 +67,10 @@ header .menu-desplegable div {
   background-color: #0e6da8;
   color: #fff;
 }
+header .menu-desplegable div a:hover {
+  color: #302e39;
+}
+
 header .menu-desplegable .btn-close {
   color: #fff;
 }
@@ -135,10 +139,15 @@ main {
 /*fin header*/
 
 /*main*/
+main .cuenta-dolar {
+  display: flex;
+  padding-top: 4em;
+}
 
-main .titulo-nombre {
+main .cuenta .titulo-nombre {
   margin-left: 3rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* tarjetas*/
@@ -146,13 +155,17 @@ main .titulo-nombre {
 .cuenta {
   display: grid;
   grid-template-areas: "a b";
-  margin: 3.125em;
+  margin-right: 3em;
+  margin-left: 3em;
   flex: auto;
   width: 70%;
   float: left;
+  background-color: #f1f1f1;
+  padding-bottom: 5em;
+  padding-left: 2em;
+  padding-right: 1em;
+  border-radius: 2em;
 }
-
-
 
 .cuenta article {
   background: rgb(2, 0, 36);
@@ -166,11 +179,10 @@ main .titulo-nombre {
   -moz-border-radius-bottomright: 0.6em;
   border-top-left-radius: 0.6em;
   border-bottom-right-radius: 0.6em;
-  
 }
 
 .cuenta article:hover {
-  background-color: #0e6da87b;
+  background-color: #6ea2c3;
   color: antiquewhite;
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -180,12 +192,15 @@ main .titulo-nombre {
 
 .precio-dolar {
   width: 20%;
+  height: 10%;
   float: left;
   color: #302e39;
- 
+  background-color: #f1f1f1;
+  padding: 1em;
+  margin-right: 3em;
+  border-radius: 2em;
 }
 #dolar-oficial {
-  
   color: white;
   text-align: center;
   width: 100%;
@@ -193,7 +208,7 @@ main .titulo-nombre {
   padding: 0.5em;
 }
 
-#dolar-blue{
+#dolar-blue {
   color: white;
   text-align: center;
   float: left;
@@ -201,7 +216,7 @@ main .titulo-nombre {
   padding: 0.5em;
 }
 
-#dolar-liqui{
+#dolar-liqui {
   color: white;
   text-align: center;
   float: left;
@@ -213,7 +228,6 @@ main .titulo-nombre {
   background-color: #0e6da8;
   border-radius: 5px;
   height: 1.6em;
-
 }
 .precio-dolar .compra {
   background-color: aliceblue;
@@ -224,28 +238,18 @@ main .titulo-nombre {
   width: 50%;
   height: 5em;
   border-radius: 5px;
-
 }
 
 .precio-dolar .venta {
   background-color: aliceblue;
   text-align: center;
   color: #0e6da8;
- float: left;
- padding-right: 1em;
- width: 50%; 
- height: 5em;
- border-radius: 5px;
+  float: left;
+  padding-right: 1em;
+  width: 50%;
+  height: 5em;
+  border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
 
 /* ACCESOS DIRECTOS */
 main .accesos-directos {
@@ -254,29 +258,25 @@ main .accesos-directos {
 
 main .accesos-directos .títulos {
   color: white;
-  background-color: #302e39;
+  padding-top: 4em;
 }
 
 main .accesos-directos .títulos h3 {
-  margin-left: 1.5rem;
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 main .accesos-directos .títulos p {
   display: flex;
-  justify-content: left;
-  margin-left: 3rem;
+  justify-content: center;
 }
 
 main .accesos-directos .nav-bar {
   display: grid;
-  grid-template-areas:
-    "a b c d e f";
+  grid-template-areas: "a b c d e f";
   gap: 2.4rem 2.4rem;
   margin: 0 20%;
   padding: 2.5rem;
-
 }
 
 main .accesos-directos .nav-bar button {
@@ -301,67 +301,9 @@ main .accesos-directos .nav-bar button img {
 
 main .accesos-directos .nav-bar button:hover {
   color: white;
-  background-color: #0e6da87b;
+  background-color: #6ea2c3;
   border: none;
 }
-
-/* panel consumos */
-
-.contenido{
-  display: none;}
-
-main .ultimosconsumos {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: #302e39;
-  margin-bottom: 10px;
-}
-
-main .ultimosconsumos h3 {
-  display: flex;
-  justify-content: start;
-  padding-top: 0.5rem;
-  margin-left: 1.5rem;
-  color: white;
-}
-
-.dataconsumos {
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 2rem;
-}
-
-.fechaconsumos {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.valorconsumos {
-  font-size: 20px;
-  font-weight: 600;
-  margin-right: 80px;
-  align-content: center;
-}
-
-.pruebaconsumo {
-  display: flex;
-  flex-direction: column;
-}
-
-.cajaconsumos {
-  display: flex;
-  width: calc(100% / 5 - 15px);
-  justify-content: space-between;
-  width: 100%;
-  padding-right: 1rem;
-}
-
-.nombredelconsumo {
-  margin-left: 1rem;
-}
-
-/* fin panel consumos */
 
 /*footer*/
 footer {
@@ -472,27 +414,39 @@ footer .cajamiddle {
       "c d"
       "e f";
   }
-
 }
 
 @media screen and (max-width: 1300px) {
+  main .cuenta h3 {
+    display: none;
+  }
   main .cuenta {
     display: grid;
     grid-template-areas:
       "a"
       "b";
-    gap: 5rem;
+    gap: 1rem;
     justify-content: center;
-    width: 55%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
   }
 
-  main .precio-dolar{
-    width: 30%;
+  main .cuenta-dolar {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b";
+    justify-content: center;
+  }
+
+  main .precio-dolar {
+    width: 100%;
+    height: 100%;
   }
 
   main .precio-dolar .compra {
     width: 100%;
-
   }
   main .precio-dolar .venta {
     width: 100%;
@@ -501,12 +455,11 @@ footer .cajamiddle {
   main .accesos-directos .nav-bar {
     display: grid;
     grid-template-areas:
-      "a b c" 
+      "a b c"
       "d e f";
     gap: 2.4rem 2.4rem;
     margin: 0 20%;
     padding: 2.5rem;
-  
   }
 }
 
@@ -524,6 +477,12 @@ footer .cajamiddle {
     margin: 0;
   }
 
+  main .cuenta-dolar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+  }
   main .cuenta article {
     margin: 2rem;
     height: 90%;
