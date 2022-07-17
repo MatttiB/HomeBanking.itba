@@ -26,6 +26,7 @@ link: https://matttib.github.io/HomeBanking.itba/login/login.html
 
 ![Página de inicio homebanking](https://user-images.githubusercontent.com/105286940/169166996-bb2f2828-5b9d-44d9-b3c9-0c4c5ed62a0a.jpg)
 
+# Sprint3
 3° Sprint: Modificaciones y tareas a realizar (14/06/2022).
 Para la parte de Login: Modificar Usuario, Hacer linkeo de botones, Generar puntos para tapar contraseña, Mejorar tema responsive.                                        Para la parte de Inicio: Centrar botones de la parte inferior, Hacer maqueta dólares para pantalla de inicio (como iría proyectado en la pantalla) y completar la consigna, detalles estéticos de la página, mejorar estetica menú y footer, linkear boton salir, modificar formulario prestamos.
 
@@ -37,7 +38,7 @@ Las tareas agregadas son (16/06/2022): Hacer que usuario y contraseña generen m
 
 Falta hacer de las tareas mencionadas anteriormente (18/06/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), Completar la parte de  dólares (importante), mejorar estetica menú y footer (index) (opcional).
 
-
+# Sprint4
 4° Sprint: Modificaciones y tareas a realizar (27/06/2022).
 Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), mejorar estetica menú y footer (index) (opcional), Falta ajustar algunos detalles de visualización en la página del form donde el width inicial no sea ocupado en su totalidad por el formulario, y luego utilizar @media screen para que cuando se reduzca el tamaño del navegador el width aumente y Falta mejorar a futuro el flujo visual de la app (Importante) (Corrección sprint3), Sumarle estilo del ultimo mockup (index) (importante), Hacer que aparezca el nombre del usuario en la pagina principal, Corregir algunos linkeos que al hacer el acomodado del repo se rompieron (importante). 
 Además realizar lo pedido para el sprint 4 (lo más importante). 
@@ -47,3 +48,8 @@ Quedan por realizar (30/06/2022): Realizar un array que guarde los datos del reg
 Aclaracion backend: la parte del backend para el sprint4 fue realizado la totalidad en grupo mediante discord.
 
 Quedan por realizar (03/07/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), mejorar estetica menú y footer (index) (opcional), Falta mejorar a futuro el flujo visual de la app (Importante)(Corrección sprint3) = Sumarle estilo del ultimo mockup (index) (importante), Hacer que aparezca el nombre del usuario en la pagina principal (index).
+
+# Sprint5
+Aclaracion backend: el trabajo fue realizado en su totalidad en grupo mediante discord.
+
+Mejoras por realizar (17/07/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), mejorar estetica menú y footer (index) (opcional), Hacer que aparezca el nombre del usuario en la pagina principal (index).
