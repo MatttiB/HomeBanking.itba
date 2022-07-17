@@ -23,7 +23,6 @@ CUENTAS_BANCARIAS = {
     }
 }
 
-
 class Cliente(ABC):
     def __init__(self, kwargs):
         self.__nombre = kwargs.get('nombre')
@@ -52,8 +51,14 @@ class Classic(Cliente):
     def __init__(self, kwargs):
         
         super().__init__(kwargs)
-        
+
+        self.__cant_max_tarjeta = 0
+        self.__cant_max_chequera = 0
+        self.__cant_tarjeta = 0        
         self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get("CLASSIC"))
+
+    def obtener_retiro_max_diario(self):
+        return self.__cuenta.obtener_limite_extraccion()
         
     def puede_crear_chequera(self):
         return False
@@ -71,8 +76,14 @@ class Gold(Cliente):
         
         self.__cant_max_tarjeta = 1
         self.__cant_max_chequera = 1
-        
         self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get("GOLD"))
+    
+    def getCantTarjetas(self):
+        return self.__cant_max_tarjeta
+
+    def getCantChequera(self):
+        return self.__cant_max_chequera
+
         
     def puede_crear_chequera(self):
         return True
@@ -90,8 +101,13 @@ class Black(Cliente):
         
         self.__cant_max_tarjeta = 5
         self.__cant_max_chequera = 2
-        
         self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get("BLACK"))
+        
+    def getCantTarjetas(self):
+        return self.__cant_max_tarjeta
+
+    def getCantChequera(self):
+        return self.__cant_max_chequera
         
     def puede_crear_chequera(self):
         return True
@@ -120,8 +136,29 @@ class Cuenta:
 
     def __init__(self, kwargs):
 
-        self.limite_extraccion_diario = kwargs.get('LIMITE_EXTRACCION_DIARIO')
-        self.limite_transferencia_recibida = kwargs.get('LIMITE_TRANSFERENCIA_RECIBIDA')
-        self.monto = kwargs.get('MONTO')
-        self.costo_transferencia = kwargs.get('COSTO_TRANFERENCIA')
-        self.saldo_descubierto_disponible = kwargs.get('SALDO_DESCUBIERTO_DISPONIBLE')
+        self.__limite_extraccion_diario = kwargs.get('LIMITE_EXTRACCION_DIARIO')
+        self.__limite_transferencia_recibida = kwargs.get('LIMITE_TRANSFERENCIA_RECIBIDA')
+        self.__monto = kwargs.get('MONTO')
+        self.__costo_transferencia = kwargs.get('COSTO_TRANFERENCIA')
+        self.__saldo_descubierto_disponible = kwargs.get('SALDO_DESCUBIERTO_DISPONIBLE')
+
+    def obtener_limite_extraccion(self):
+        return self.__limite_extraccion_diario
+
+    def obtener_limite_transferencia_recibida(self):
+        return self.__limite_transferencia_recibida
+
+    def obtener_monto(self):
+        return self.__monto
+
+    def cambiar_monto(self, nuevo_monto):
+        self.__monto = nuevo_monto
+
+    def obtener_costo_transferecia(self):
+        return self.__costo_transferencia
+
+    def obtener_saldo_descubierto_disponible(self):
+        return self.__saldo_descubierto_disponible
+
+    def cambiar_saldo_descubierto(self, nuevo_saldo_descubieto):
+        self.__saldo_descubierto_disponible = nuevo_saldo_descubieto
