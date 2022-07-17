@@ -86,7 +86,7 @@
 		},
 		{
 			"estado": "RECHAZADA",
-			"tipo": "COMPRA_DOLAR",
+			"tipo": "COMPRAR_DOLAR",
 			"cuentaNumero": 190,
 			"cupoDiarioRestante": 3000,
 			"monto": 9000,

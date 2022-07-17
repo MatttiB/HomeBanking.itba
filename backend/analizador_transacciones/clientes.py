@@ -24,17 +24,29 @@ CUENTAS_BANCARIAS = {
 }
 
 class Cliente(ABC):
-    def __init__(self, kwargs):
-        self.__nombre = kwargs.get('nombre')
-        self.__apellido = kwargs.get('apellido')
+    def __init__(self, kwargs, tipo_cliente):
+        self.__nombre = kwargs.get('nombre') + " " + kwargs.get('apellido')
         self.__numero = kwargs.get('numero')
         self.__dni = kwargs.get('dni')
         
         self.__direccion = Direccion(kwargs.get('direccion'))
+        self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get(tipo_cliente))
         
-    def __str__(self):
-        return '{} {} {} {}'.format(self.__nombre, self.__apellido, self.__numero, self.__dni)
-        
+    def obtener_nombre(self):
+        return self.__nombre
+
+    def obtener_numero(self):
+        return self.__numero
+
+    def obtener_dni(self):
+        return self.__dni
+
+    def obtener_direccion(self):
+        return self.__direccion
+    
+    def obtener_cuenta(self):
+        return self.__cuenta
+
     @abstractclassmethod
     def puede_crear_chequera(self):
         pass
@@ -48,17 +60,13 @@ class Cliente(ABC):
         pass
     
 class Classic(Cliente):
-    def __init__(self, kwargs):
+    def __init__(self, kwargs, tipo_cliente):
         
-        super().__init__(kwargs)
+        super().__init__(kwargs, tipo_cliente)
 
         self.__cant_max_tarjeta = 0
         self.__cant_max_chequera = 0
         self.__cant_tarjeta = 0        
-        self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get("CLASSIC"))
-
-    def obtener_retiro_max_diario(self):
-        return self.__cuenta.obtener_limite_extraccion()
         
     def puede_crear_chequera(self):
         return False
@@ -70,21 +78,19 @@ class Classic(Cliente):
         return False
     
 class Gold(Cliente):
-    def __init__(self, kwargs):
+    def __init__(self, kwargs, tipo_cliente):
         
-        super().__init__(kwargs)
+        super().__init__(kwargs, tipo_cliente)
         
         self.__cant_max_tarjeta = 1
         self.__cant_max_chequera = 1
-        self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get("GOLD"))
-    
+
     def getCantTarjetas(self):
         return self.__cant_max_tarjeta
 
     def getCantChequera(self):
         return self.__cant_max_chequera
 
-        
     def puede_crear_chequera(self):
         return True
     
@@ -95,13 +101,12 @@ class Gold(Cliente):
         return True
     
 class Black(Cliente):
-    def __init__(self, kwargs):
+    def __init__(self, kwargs, tipo_cliente):
         
-        super().__init__(kwargs)
+        super().__init__(kwargs, tipo_cliente)
         
         self.__cant_max_tarjeta = 5
         self.__cant_max_chequera = 2
-        self.__cuenta = Cuenta(CUENTAS_BANCARIAS.get("BLACK"))
         
     def getCantTarjetas(self):
         return self.__cant_max_tarjeta
@@ -128,7 +133,7 @@ class Direccion:
         self.provincia = kwargs.get('provincia')
         self.pais = kwargs.get('pais')
 
-    def str(self):
+    def __str__(self):
 
         return '{}({})'.format(self.calle,self.numero, self.ciudad,  self.provincia, self.pais)
     
@@ -139,7 +144,7 @@ class Cuenta:
         self.__limite_extraccion_diario = kwargs.get('LIMITE_EXTRACCION_DIARIO')
         self.__limite_transferencia_recibida = kwargs.get('LIMITE_TRANSFERENCIA_RECIBIDA')
         self.__monto = kwargs.get('MONTO')
-        self.__costo_transferencia = kwargs.get('COSTO_TRANFERENCIA')
+        self.__costo_transferencia = kwargs.get("COSTO_TRANSFERENCIA")
         self.__saldo_descubierto_disponible = kwargs.get('SALDO_DESCUBIERTO_DISPONIBLE')
 
     def obtener_limite_extraccion(self):
@@ -162,3 +167,6 @@ class Cuenta:
 
     def cambiar_saldo_descubierto(self, nuevo_saldo_descubieto):
         self.__saldo_descubierto_disponible = nuevo_saldo_descubieto
+
+    def __str__(self):
+        return '{}'.format(self.__saldo_descubierto_disponible)
