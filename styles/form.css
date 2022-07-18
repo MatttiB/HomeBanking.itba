@@ -53,7 +53,7 @@ body{
     padding-left: 15px;
     position: absolute;
     margin-top: -85px;
-    z-index: -20;
+   
     color: rgba(0, 0, 0, 0.5);
     transition: all 0.2s;
 }
@@ -183,3 +183,4 @@ header .barra-nav {
     margin-bottom: 4rem;
   }
   
+

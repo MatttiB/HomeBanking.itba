@@ -38,13 +38,13 @@ class Razon:
    #FUNCION PARA RETIRAR EFECTIVO
     def __retiro_efectivo_cajero_automatico(self, cliente, transaccion):
         if transaccion['monto'] > cliente.obtener_cuenta().obtener_limite_extraccion():
-            error = ("el monto es mayor al que se permite")
+            error = ("El monto es mayor al que se permite")
 
         elif transaccion['monto'] > transaccion['cupoDiarioRestante']:
-            error = ("el monto supera lo que le queda por extraer")
+            error = ("El monto supera lo que le queda por extraer")
 
         elif transaccion['monto'] > transaccion['saldoEnCuenta']:
-            error = ("el monto es mayor al saldo")
+            error = ("El monto es mayor al saldo")
 
         self.reporte.crear_reporte(transaccion, error)
     
