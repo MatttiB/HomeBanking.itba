@@ -1,0 +1,2 @@
+Aca estaria realizandose la primera problematica del sprint6, el codigo esta comentado para entender para que seria cada linea.
+Es más que nada una guia para ir empezando por aca.
