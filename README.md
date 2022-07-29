@@ -55,6 +55,6 @@ Aclaracion backend: el trabajo fue realizado en su totalidad en grupo mediante d
 Mejoras por realizar (17/07/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), Hacer que aparezca el nombre del usuario en la pagina principal (index).
 
 # Sprint6
-Mejoras por realizar (17/07/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), Hacer que aparezca el nombre del usuario en la pagina principal (index) (opcional).
+Mejoras por realizar (27/07/2022): Realizar un array que guarde los datos del registro de usuario nuevo (registro) (opcional), Hacer que aparezca el nombre del usuario en la pagina principal (index) (opcional).
 
 Aclaracion backend: el trabajo se esta realizando en su totalidad en grupo mediante discord.
