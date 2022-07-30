@@ -59,4 +59,4 @@ Mejoras por realizar (27/07/2022): Realizar un array que guarde los datos del re
 
 Los archivos se encuentran en la parte de backend dentro de la carpeta sql.
 
-Aclaracion backend: el trabajo se esta realizando en su totalidad en grupo mediante discord.
+Aclaracion backend: el trabajo se realizo en su totalidad en grupo mediante discord.
