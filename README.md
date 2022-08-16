@@ -62,7 +62,4 @@ Los archivos se encuentran en la parte de backend dentro de la carpeta sql.
 Aclaracion backend: el trabajo se realizo en su totalidad en grupo mediante discord.
 
 # Sprint7
-Aclaracion backend: el trabajo se realizo en su totalidad en grupo mediante discord. Se realizo en otro repositorio por seguridad a no dañar este, luego lo pasaremos a este, para que este todo en el mismo. 
-
-El link al repositorio donde esta el trabajo del Sprint 7 es el siguiente:
-https://github.com/tomy07417/homebanking
+Aclaracion backend: el trabajo se realizo en su totalidad en grupo mediante discord.
