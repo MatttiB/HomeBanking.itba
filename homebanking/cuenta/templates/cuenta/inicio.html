@@ -84,27 +84,50 @@
         />
         <nav>
           <ul class="nav-right-section">
+            {% if user.is_authenticated %}
+              <li>
+                {{user.cliente.nombre}} {{user.cliente.apellido}}
+              </li>
+              <li>
+                <a href="">
+                  <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/005/005/788/small/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
+                  alt="user logo"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <button
+                type="button"
+                class="boton-nav"
+                onclick="window.location.href = '/logout'"
+                >
+                SALIR
+              </button>
+            </li>
+          {% else %}
             <li>
-              <p>Nombre Apellido</p>
+              Nombre y Apellido
             </li>
             <li>
               <a href="">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/005/005/788/small/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
-                  alt="user logo"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/005/788/small/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
+                alt="user logo"
                 />
               </a>
             </li>
 
             <li>
               <button
-                type="button"
-                class="boton-nav"
-                onclick="window.location.href = '/logout'"
-              >
-                SALIR
+              type="button"
+              class="boton-nav"
+              onclick="window.location.href = '/login'">
+                INICIAR SESION
               </button>
             </li>
+          {% endif %}
           </ul>
         </nav>
       </section>
@@ -120,19 +143,33 @@
       </nav>
     </header>
     <main>
+      {% if user.is_authenticated %}
       <div class="cuenta-dolar">
+        <section class="cuenta">
+          <h2 class="titulo-nombre">¡Hola, {{user.cliente.nombre}}!</h2>
+          <h3 class="titulo-nombre"></h3>
+          <article>
+            <h3>CA$ 408456555 -2</h3>
+            <p>Caja de ahorro</p>
+            <p class="saldo">${{user.cliente.idcuenta.saldo}}</p>
+            <p class="saldo">U$S 0,00</p>
+            
+            <button type="button" class="botonalias" disabled>Alias/CBU</button>
+          </article>
+        {% else %}
         <section class="cuenta">
           <h2 class="titulo-nombre">¡Hola, Nombre!</h2>
           <h3 class="titulo-nombre"></h3>
           <article>
             <h3>CA$ 408456555 -2</h3>
             <p>Caja de ahorro</p>
-            <p class="saldo">$10.000,00</p>
-            <p class="saldo">U$S 0,00</p>
-
+            <p class="saldo">-</p>
+            <p class="saldo">-</p>
+            
             <button type="button" class="botonalias" disabled>Alias/CBU</button>
           </article>
-
+        {% endif %}
+          
           <article>
             <h3>VISA DEBITO * 5616</h3>
             <p class="ultimos-consumos">Últimos consumos</p>
@@ -205,7 +242,7 @@
           </button>
           <button
             type="button"
-            onclick="window.location.href = '../accesos_directos/prestamos.html'"
+            onclick="window.location.href = 'prestamos/'"
           >
             <img src={% static "cuentas/img/handshake.png" %} alt="" /> Préstamos
           </button>

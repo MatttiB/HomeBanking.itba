@@ -1,0 +1,27 @@
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$primary:       #302e39;
+$secondary:     #302e39;
+$danger:        #0e6da8;
+$border-color:   #302e39;
+
+scroll-container {
+    display: block;
+    width: 98%;
+    height: 15rem;
+    margin-left: 4px;
+    margin-right: 4px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.remove{
+    border-bottom: 1px #8a8a8a solid;
+}
+
+.remove:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

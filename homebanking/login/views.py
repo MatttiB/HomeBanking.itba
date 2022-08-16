@@ -1,4 +1,3 @@
-from ast import For
 from django.shortcuts import render, redirect
 from .forms import FormularioRegistro, FormularioCliente, FormularioDireccion
 from cliente.models import Cliente

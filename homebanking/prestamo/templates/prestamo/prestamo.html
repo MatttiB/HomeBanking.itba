@@ -1,0 +1,18 @@
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<form method='post'>
+    
+    {% csrf_token %}
+    {{form}}
+    
+    <button type='submit'> Solicitar </button>
+    {% if mensaje == "error" %}
+        <div class="alert alert-danger" role="alert">
+            El monto solicitado es superior al permitido para este tipo de cuenta
+        </div>
+    {% endif %}
+    </form>
+    <a href= {% url 'inicio' %}> Volver Inicio </a>
+
+{% endblock  %}
