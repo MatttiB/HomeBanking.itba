@@ -1,0 +1,27 @@
+body {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10em 25em 0 25em;
+    
+}
+
+
+#contenedor-formulario {
+    border-radius: 5px;
+    background-color: #302e39;
+    padding: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        margin: 10em 10em 0 10em;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body{
+        margin: 10em 3em 0 3em;
+    }
+}
+

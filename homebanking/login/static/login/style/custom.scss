@@ -1,0 +1,12 @@
+
+$danger: rgba(42, 112, 241, 0.795);
+$secondary:#342c3c; 
+
+body{
+    background-image: url("../img/fondobanco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
