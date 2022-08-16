@@ -4,7 +4,10 @@
 
     <form method= 'POST' class= "row">
                 
-        {% csrf_token %}{{form}}
+        {% csrf_token %}
+        {{form_user}}
+        {{form_cliente}}
+        {{form_direccion}}
 
         <button type="submit">Registrarse</button>
 

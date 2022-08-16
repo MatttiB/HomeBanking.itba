@@ -40,15 +40,9 @@ INSTALLED_APPS = [
     'cliente.apps.ClienteConfig',
     'cuenta.apps.CuentaConfig',
     'login.apps.LoginConfig',
-    'prestamos.apps.PrestamosConfig',
-    'tarjetas.apps.TarjetasConfig',
-    'crispy_bootstrap5',
-    'crispy_forms'
+    'prestamo.apps.PrestamoConfig',
+    'tarjeta.apps.TarjetaConfig',
 ]
-
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
-
-CRISPY_TEMPLATE = 'boostrap5'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
