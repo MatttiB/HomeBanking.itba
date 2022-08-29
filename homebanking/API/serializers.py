@@ -67,15 +67,6 @@ class TratamientoPrestamosSerializer(serializers.ModelSerializer):
         validated_data["fecha_inicio"] = datetime.now().strftime("%Y-%m-%d")
         return Prestamo.objects.create(**validated_data)
 
-    def destroy(self, validated_data):
-        cuenta = Cuenta.objects.get(id_cuenta=validated_data["cuenta"].id_cuenta)
-        if cuenta:
-                cuenta.saldo -= int(validated_data["monto"])
-                cuenta.save()
-        else:
-                raise Http404
-        return Prestamo.objects.delete(**validated_data)
-
 class SucursalSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Sucursal

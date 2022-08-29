@@ -121,11 +121,6 @@ class DireccionViewSet(viewsets.ModelViewSet):
     serializer_class = DireccionesSerializer
     http_method_names = ['put', 'get']
 
-    def get_queryset(self, pk=None):
-        if pk is None:
-            return self.get_serializer().Meta.model.objetcs.filter(state = True)
-        return self.get_serializer().Meta.model.objects.filter(id=pk, state=True).fierst()
-    
     def list(self, request):
         usuario = User.objects.get(username=request.user)
         if usuario.is_staff:
@@ -144,14 +139,28 @@ class DireccionViewSet(viewsets.ModelViewSet):
                 return Response(serializer.data)
             return Response({'detail':'El cliente no tiene direccion'}, status=status.HTTP_404_NOT_FOUND)
         
-    def update(self, request, pk=None):
-        if self.get_queryset(pk):
-            serializer = self.serializer_class(self.get_queryset(pk), date = request.data)
+    def update(self, request, pk=None, partial=True):
+        usuario = User.objects.get(username=request.user)
+        if usuario.is_staff:
+            instance = self.get_object()
+            serializer = DireccionesSerializer(
+                instance, data=request.data, partial=partial, context={"request": request}
+            )
             if serializer.is_valid():
                 serializer.save()
-                return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            cliente = Cliente.objects.get(user_id=usuario.id)
+            instance = self.get_object()
+            serializer = DireccionesSerializer(
+                instance, data=request.data, partial=partial, context={"request": request}
+            )
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
 class TratamientoPrestamoViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
     queryset = Prestamo.objects.all()
@@ -172,8 +181,13 @@ class TratamientoPrestamoViewSet(viewsets.ModelViewSet):
         usuario = User.objects.get(username=request.user)
         if usuario.is_staff:
             instance = self.get_object()
-            serializer = self.serializer_class(instance, data=request.data, context={'request':request})
-            if serializer.is_valid():
-                serializer.destroy()
-                return Response({"detail": "Successfully deleted"}, status=status.HTTP_204_NO_CONTENT)
+            print(instance)
+            cuenta = Cuenta.objects.get(id_cuenta=instance.cuenta.id_cuenta)
+            if cuenta:
+                cuenta.saldo -= int(instance.monto)
+                cuenta.save()
+            else:
+                raise Http404
+            instance.delete()
+            return Response({"detail": "Successfully deleted"}, status=status.HTTP_204_NO_CONTENT)
         return Response({"error": "No tienes permisos para realizar esta acción"}, status=status.HTTP_401_UNAUTHORIZED)
