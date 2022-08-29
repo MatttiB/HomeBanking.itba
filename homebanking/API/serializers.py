@@ -18,16 +18,12 @@ class DireccionesSerializer(serializers.HyperlinkedModelSerializer):
         fields = "__all__"
 
 class ClienteSerializer(serializers.HyperlinkedModelSerializer):
-    direccion_pais = serializers.CharField(source='direccion.pais',read_only=True)
-    direccion_provincia = serializers.CharField(source='direccion.provincia',read_only=True)
-    direccion_ciudad = serializers.CharField(source='direccion.ciudad',read_only=True)
-    direccion_calle = serializers.CharField(source='direccion.calle',read_only=True)
-    direccion_nro_calle = serializers.CharField(source='direccion.nro_calle',read_only=True)
-    idcuenta = serializers.PrimaryKeyRelatedField(read_only=True)
+    direccion = serializers.HyperlinkedRelatedField(read_only=True, view_name='direccion-detail')
+    idcuenta = serializers.HyperlinkedRelatedField(read_only=True, view_name='cuenta-detail')
     
     class Meta:
         model = Cliente
-        fields = ["nombre", "apellido", "dni", "nacimiento", 'direccion_pais', 'direccion_provincia', 'direccion_ciudad', 'direccion_calle', 'direccion_nro_calle', 'idcuenta']
+        fields = ["nombre", "apellido", "dni", "nacimiento", 'direccion', 'idcuenta']
 
 
 class CuentaSerializer(serializers.HyperlinkedModelSerializer):
