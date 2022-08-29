@@ -32,9 +32,6 @@ class Direccion(models.Model):
     calle = models.CharField(max_length=255)
     nro_calle = models.CharField(max_length=255)
     
-    def __str__(self):
-        return '{} {}, {}, {}'.format(self.calle, self.nro_calle, self.provincia, self.pais)
-
 class Sucursal(models.Model):
     id_sucursal = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=255)
@@ -45,6 +42,6 @@ class Cliente(models.Model):
     apellido = models.CharField(max_length=255)
     dni = models.CharField(max_length=255)
     nacimiento = models.DateField()
-    direccion = models.ForeignKey(Direccion, null=True, blank=True, on_delete=models.CASCADE)
+    direccion = models.OneToOneField(Direccion, null=True, blank=True, on_delete=models.CASCADE)
     idcuenta = models.OneToOneField(Cuenta, on_delete=models.CASCADE, null=True, blank=True)
     idsucursal = models.OneToOneField(Sucursal, on_delete=models.CASCADE, null=True)
