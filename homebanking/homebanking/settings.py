@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'login.apps.LoginConfig',
     'prestamo.apps.PrestamoConfig',
     'tarjeta.apps.TarjetaConfig',
-    'rest_framework', 
-    'Api_Homebanking',
+    'rest_framework',
+    'API.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [

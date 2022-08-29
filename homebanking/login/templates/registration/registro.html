@@ -1,48 +1,35 @@
 {% block content %}
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-
-<body class="d-flex justify-content-center ">
-
-    <form method='POST' class=" w-75 text-center p-2">
-        <div>
-            <br>
-        </div>
-        <div class="col p-5 rounded-start bg-secondary">
-        <h1 class="fw-bold text-center py-5 text-white"> Registro de usuario </h1>
-        {% csrf_token %}
-        <div class="row">
-            <div class="col p-5">
-                <h3 class=" text-center py-5 text-white"> Datos del usuario </h3>
-                <div class='row text-start'>
-                    {{form_user}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <body class="d-flex justify-content-center">
+        
+        <form method= 'POST' class= " w-75 text-center p-2">
+            <h1> Registro de usuario </h1>
+            {% csrf_token %}
+            <div class="row">
+                <div class= 'col p-5'>
+                    <h3> Datos del usuario </h3>
+                    <div class='row text-start'>
+                        {{form_user}}
+                    </div>
+                </div>
+                <div class='col p-5'>
+                    <h3> Datos del cliente </h3>
+                    <div class='row text-start'>
+                        {{form_cliente}}
+                    </div>
+                    <div class='row text-start'>
+                        {{form_direccion}}
+                    </div>
                 </div>
             </div>
-            <div class="col p-5">
-                <h3 class="text-center py-5 text-white"> Datos del cliente </h3>
-                <div class='row text-start'>
-                    {{form_cliente}}
-                </div>
-                <div class='row text-start'>
-                    {{form_direccion}}
-                </div>
-            </div>
-        </div>
+            <button type="submit" class="w-25">Registrarse</button>
 
-        <div>
-            <br>
-        </div>
-        <button type="submit" class="btn btn-primary " id="botonIngresar">Registrarse</button>
-
+        </form>
     </form>
     </form>
     </form>
     </form>
     </form>
     </form>
-    </form>
-</div>
-</body>
-
-{% endblock %}
+    </body>
+{% endblock  %}
