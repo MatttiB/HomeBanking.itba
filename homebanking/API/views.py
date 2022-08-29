@@ -162,7 +162,7 @@ class DireccionViewSet(viewsets.ModelViewSet):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 class TratamientoPrestamoViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAdminUser]
     queryset = Prestamo.objects.all()
     serializer_class = TratamientoPrestamosSerializer
     http_method_names = ["post", "delete"]
